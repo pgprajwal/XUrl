@@ -31,6 +31,11 @@ public class XUrlMain {
     System.out.println(url6);
     System.out.println(urlNull);
 
+    // my code
+    // System.out.println("Long url of url2: "+xUrl.getUrl(url2));
+    // System.out.println("Long url of url4: "+xUrl.getUrl(url4));
+    // System.out.println("Hit count of url http://abc2.com: "+xUrl.getHitCount("http://abc2.com"));
+
     // Test out longURL lookup based on the shortURL input
     assert(xUrl.getUrl(url).equals("http://abc.com"));
     assert(xUrl.getUrl(url2).equals(xUrl.getUrl(url4)));
