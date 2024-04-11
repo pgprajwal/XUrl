@@ -13,7 +13,7 @@ public class XUrlMain {
     String url1 = xUrl.registerNewUrl("http://abc1.com");
     String url2 = xUrl.registerNewUrl("http://abc2.com");
     String url3 = xUrl.registerNewUrl("http://abc3.com");
-    String url4 = xUrl.registerNewUrl("http://abc2.com");  // url4 should be the same as url2
+    String url4 = xUrl.registerNewUrl("http://abc2.com");
     System.out.println(url);
     System.out.println(url1);
     System.out.println(url2);
@@ -30,11 +30,6 @@ public class XUrlMain {
     System.out.println(url5);
     System.out.println(url6);
     System.out.println(urlNull);
-
-    // my code
-    // System.out.println("Long url of url2: "+xUrl.getUrl(url2));
-    // System.out.println("Long url of url4: "+xUrl.getUrl(url4));
-    // System.out.println("Hit count of url http://abc2.com: "+xUrl.getHitCount("http://abc2.com"));
 
     // Test out longURL lookup based on the shortURL input
     assert(xUrl.getUrl(url).equals("http://abc.com"));
